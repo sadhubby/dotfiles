@@ -1,0 +1,9 @@
+23/05/25 (16:37:41) | ERROR: Input thread failed with exception: (5, 'Input/output error')
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 954, in _get_key
+    with Raw(sys.stdin):
+         ~~~^^^^^^^^^^^
+  File "/usr/bin/bpytop", line 798, in __exit__
+    termios.tcsetattr(self.stream, termios.TCSANOW, self.original_stty)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+termios.error: (5, 'Input/output error')
